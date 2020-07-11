@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+@import "~font-awesome/css/font-awesome.css";
+// @import "~materialize-css/sass/materialize.scss";
+
+:root{
+  --white: white;
+  --content: hsl(207, 21%, 19%);
+  --dark-bg: hsl(207, 26%, 17%);
+  --dark-text: var(--white);
+
+  --light-text: hsl(200, 15%, 8%);
+  --light-input: hsl(0, 0%, 52%);
+  --light-bg: hsl(0, 0%, 98%);
+  --light-el: var(--white);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Roboto, sans-serif;
+}
+
+
+.shadow{
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}

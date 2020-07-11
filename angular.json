@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "multilangue"
+    }
+  },
+  "defaultProject": "multilangue",
+  "cli": {
+    "analytics": false
+  }
 }
