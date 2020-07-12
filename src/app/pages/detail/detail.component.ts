@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../service/api.service';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import { Country } from 'src/app/model/model';
+import { mergeMap, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-detail',
@@ -16,11 +17,10 @@ export class DetailComponent implements OnInit {
   constructor(private api: ApiService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe(
-      params => {
-        this.country$ = this.api.getCountryByname(params.contry$);
-      }
-    );
+  }
+
+  getcountry(name){
+    this.country$ = this.api.getCountryByname(name);
   }
 
 }

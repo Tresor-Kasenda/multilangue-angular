@@ -5,8 +5,14 @@ import { DetailComponent } from './pages/detail/detail.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
-  { path: ':country', component: DetailComponent},
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: ':country',
+    component: DetailComponent
+  },
 ];
 
 @NgModule({
