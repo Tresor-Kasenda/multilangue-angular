@@ -1,0 +1,6 @@
+<div *ngIf="country" [routerLink]="'/' + country.name">
+  <img [src]="country.flag" alt="{{ country.name }}">
+  <div>
+    <h3>{{ country?.name |titlecase }}</h3>
+  </div>
+</div>

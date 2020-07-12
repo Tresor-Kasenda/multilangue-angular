@@ -16,8 +16,4 @@ export class AppComponent implements OnInit {
   ngOnInit(){
     this.theme = this.themeSerice.mode$;
   }
-
-  toggleTheme(){
-    this.themeSerice.toogleMode();
-  }
 }
