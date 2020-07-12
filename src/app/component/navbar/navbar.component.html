@@ -1,10 +1,21 @@
 <nav class="shadow">
-  <h2>Expemple Language</h2>
+  <h2>{{'Expemple Language'| translate }}</h2>
   <div>
     <div (click)="toggleTheme()">
       <span class="fa fa-moon-o"></span>
       {{ ' ' }}
-      <span>Dark mode</span>
+      <span>{{'Dark mode'| translate }}</span>
     </div>
   </div>
+
+  <select
+    [(ngModel)]="language"
+    (change)="onChangeLanguage()"
+  >
+    <option
+      *ngFor="let item of languages"
+      [ngValue]="item"
+    >{{item.name}}
+    </option>
+  </select>
 </nav>
