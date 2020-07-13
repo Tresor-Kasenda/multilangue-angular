@@ -1,15 +1,15 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { Country } from 'src/app/model/model';
 import { ApiService } from 'src/app/service/api.service';
-import { Country } from '../../model/model';
 
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+  selector: 'app-carde',
+  templateUrl: './carde.component.html',
+  styleUrls: ['./carde.component.scss']
 })
-export class CardComponent implements OnInit {
+export class CardeComponent implements OnInit {
 
   @Input()
   country: Country;
@@ -21,4 +21,5 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 }

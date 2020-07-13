@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { ThemeService } from 'src/app/service/theme.service';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  selector: 'app-nav',
+  templateUrl: './nav.component.html',
+  styleUrls: ['./nav.component.scss']
 })
-export class NavbarComponent  {
+export class NavComponent  {
 
   language = { name: 'Français', locale: 'fr' };
   languages = [
@@ -28,5 +28,6 @@ export class NavbarComponent  {
   onChangeLanguage = () => {
     this.translate.use(this.language.locale);
   }
+
 
 }

@@ -13,6 +13,8 @@ const routes: Routes = [
     path: ':country',
     component: DetailComponent
   },
+  { path: 'nav', loadChildren: () => import('./component/nav/nav.module').then(m => m.NavModule) },
+  { path: 'carde', loadChildren: () => import('./component/carde/carde.module').then(m => m.CardeModule) },
   {
     path: '**',
     redirectTo: 'home'
