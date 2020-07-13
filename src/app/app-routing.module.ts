@@ -13,8 +13,11 @@ const routes: Routes = [
     path: ':country',
     component: DetailComponent
   },
+  {
+    path: '**',
+    redirectTo: 'home'
+  }
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

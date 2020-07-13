@@ -7,15 +7,10 @@
       <span>{{'Dark mode'| translate }}</span>
     </div>
   </div>
-
   <select
     [(ngModel)]="language"
     (change)="onChangeLanguage()"
-  >
-    <option
-      *ngFor="let item of languages"
-      [ngValue]="item"
-    >{{item.name}}
-    </option>
+    >
+    <option *ngFor="let item of languages" [ngValue]="item">{{item.name}}</option>
   </select>
 </nav>

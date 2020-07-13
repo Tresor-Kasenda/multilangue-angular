@@ -13,6 +13,7 @@ export class NavbarComponent  {
   languages = [
     { name: 'Français', locale: 'fr' },
     { name: 'Anglais', locale: 'en' },
+    { name: 'Arable', locale: 'ar' },
   ];
 
   constructor(private themeSerice: ThemeService, public translate: TranslateService) {
