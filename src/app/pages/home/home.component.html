@@ -1,6 +1,8 @@
-<div>
-  <app-card
-    *ngFor="let country of countrie$ | async"
-    [country]="country"
-  ></app-card>
+<div class="container">
+  <div class="row">
+    <app-card
+      *ngFor="let country of countrie$ | async"
+      [country]="country"
+    ></app-card>
+  </div>
 </div>

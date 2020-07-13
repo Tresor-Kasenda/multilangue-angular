@@ -1,18 +1,15 @@
-<div *ngIf="country" [routerLink]="'/' + country.name">
-  <img [src]="country.flag" alt="{{ country.name }}">
-  <div>
-    <h3 >{{ 'country' | translate}} -{{ country?.name  }}</h3>
-  </div>
-  <div>
-    {{ 'population' | translate}}  {{ country.population }}
-  </div>
-
-  <div >
-    {{ 'capitol' | translate}}   {{ country.capital }}
-  </div>
-
-  <div >
-    {{ 'name' | translate}}
+<div class="col-md-4 mt-3" *ngIf="country" [routerLink]="'/' + country.name">
+  <div class="card">
+      <img [src]="country.flag" alt="{{ country.name }}" class="img-fluid">
+    <div class="card-body">
+      <h5 class="card-title">{{ 'country' | translate }} -{{ country?.name  }}</h5>
+      <p class="card-text">
+        {{ 'population' | translate }}  {{ country.population }}
+      </p> <br>
+      <p class="card-text">
+        {{ 'capitol' | translate }}   {{ country.capital }}
+      </p>
+    </div>
   </div>
 </div>
 
